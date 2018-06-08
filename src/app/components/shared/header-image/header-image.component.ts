@@ -15,7 +15,10 @@ export class HeaderImageComponent implements OnInit {
   //    Tooltip:"hola"
   //  }
   constructor() {
-    console.log("constructor:" + this.image);
+    console.log("constructor HeaderImageComponent:");
+    // console.log("constructor ServicesComponent:" + this.headerImage.Url);
+    // console.log("constructor HeaderImageComponent" );
+    // console.log("HeaderImageComponent.constructor:" + this.image);
    }
 
   ngOnInit() {

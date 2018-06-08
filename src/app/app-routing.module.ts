@@ -30,4 +30,9 @@ const routes: Routes = [
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+  // quitar el constructor
+  constructor(){
+    console.log("constructor AppRoutingModule");
+  }
+}

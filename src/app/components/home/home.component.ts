@@ -7,7 +7,9 @@ import { WebItem } from '../../models/web-item';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    console.log("constructor HomeComponent");
+  }
   webItem: WebItem=  { 
     HeaderImageUrl:"assets/img/avion.jpg",
     HeaderImageUrlTooltip:"Nosotros",

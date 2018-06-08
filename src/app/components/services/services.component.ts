@@ -11,8 +11,9 @@ public webItem: WebItem;
 public headerImage: HeaderImage;
   constructor() { 
      this.init();
-    console.log("ServicesComponent:" + this.webItem.HeaderImageUrl);
-    console.log("ServicesComponent:" + this.headerImage.Url);
+     console.log("constructor ServicesComponent");
+    // console.log("constructor ServicesComponent:" + this.webItem.HeaderImageUrl);
+    // console.log("constructor ServicesComponent:" + this.headerImage.Url);
     
   }
   init(){
@@ -39,7 +40,7 @@ public headerImage: HeaderImage;
   
 
   ngOnInit() {
-    console.log("ServicesComponentngOnInit:" + this.webItem.HeaderImageUrl);
+    // console.log("ServicesComponentngOnInit:" + this.webItem.HeaderImageUrl);
   }
 
 }

@@ -10,7 +10,9 @@ import { SolutionsComponent } from '../../solutions/solutions.component';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    console.log("CarouselComponent");
+  }
   private aboutUsComponent=new AboutUsComponent();
   private serviceComponent=new ServicesComponent();
   private solutionsComponent=new SolutionsComponent();

@@ -23,6 +23,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { TfsAirTransportComponent } from './components/tfs-air-transport/tfs-air-transport.component';
 import { HeaderImageComponent } from './components/shared/header-image/header-image.component';
 
+// Pipes
+import { NoImagePipe } from './pipes/no-image.pipe';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +43,8 @@ import { HeaderImageComponent } from './components/shared/header-image/header-im
     SolutionsComponent,
     TechnologyComponent,
     TfsAirTransportComponent,
-    HeaderImageComponent
+    HeaderImageComponent,
+    NoImagePipe
   ],
   imports: [
     BrowserModule,

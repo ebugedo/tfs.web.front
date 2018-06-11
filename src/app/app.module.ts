@@ -22,7 +22,8 @@ import { TechnologyComponent } from './components/technology/technology.componen
 import { AppRoutingModule } from './/app-routing.module';
 import { TfsAirTransportComponent } from './components/tfs-air-transport/tfs-air-transport.component';
 import { HeaderImageComponent } from './components/shared/header-image/header-image.component';
-
+//Services
+import { WebItemInfoService } from './services/web-item-info.service';
 // Pipes
 import { NoImagePipe } from './pipes/no-image.pipe';
 
@@ -50,7 +51,9 @@ import { NoImagePipe } from './pipes/no-image.pipe';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    WebItemInfoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

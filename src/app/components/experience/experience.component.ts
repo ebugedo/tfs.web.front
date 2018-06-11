@@ -1,21 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { WebItem } from '../../models/web-item';
+import { WebItemInfoService } from '../../services/web-item-info.service';
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html'
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent {
 
-  constructor() { }
-  webItem: WebItem=  { 
-    HeaderImageUrl:"assets/img/avion.jpg",
-    HeaderImageUrlTooltip:"Nosotros",
-    ItemUrl: "",
-    Name: "aboutUs",
-    ShortDescription: "Aplicaciones web, bases de datos, integración de sistemas, etc..",
-    Title:"Nosotros"
-  };
-  ngOnInit() {
+  webItemInfo: WebItem = null;
+  constructor(private _webItemInfoService: WebItemInfoService) {
+    this.webItemInfo = _webItemInfoService.get("experience");
   }
 
 }

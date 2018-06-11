@@ -1,12 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { HeaderImage } from '../../../models/header-image';
 
 @Component({
   selector: 'app-header-image',
   templateUrl: './header-image.component.html'
 })
-export class HeaderImageComponent implements OnInit {
-   @Input() image: HeaderImage;
+export class HeaderImageComponent {
+  @Input() image: HeaderImage;
   //  @Input() image: string;
   //  image2: HeaderImage = {
   //    Url:"assets/img/diagramas.jpg",
@@ -15,13 +15,11 @@ export class HeaderImageComponent implements OnInit {
   //    Tooltip:"hola"
   //  }
   constructor() {
+    // debugger;
     console.log("constructor HeaderImageComponent:");
     // console.log("constructor ServicesComponent:" + this.headerImage.Url);
     // console.log("constructor HeaderImageComponent" );
     // console.log("HeaderImageComponent.constructor:" + this.image);
-   }
-
-  ngOnInit() {
   }
 
 }

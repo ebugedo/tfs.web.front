@@ -1,21 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { WebItem } from '../../models/web-item';
+import { WebItemInfoService } from '../../services/web-item-info.service';
 @Component({
   selector: 'app-technology',
   templateUrl: './technology.component.html'
 })
-export class TechnologyComponent implements OnInit {
+export class TechnologyComponent {
 
-  constructor() { }
-  webItem: WebItem=  { 
-    HeaderImageUrl:"assets/img/avion.jpg",
-    HeaderImageUrlTooltip:"Nosotros",
-    ItemUrl: "",
-    Name: "aboutUs",
-    ShortDescription: "Aplicaciones web, bases de datos, integración de sistemas, etc..",
-    Title:"Nosotros"
-  };
-  ngOnInit() {
+  webItemInfo: WebItem=null;
+  constructor(private _webItemInfoService: WebItemInfoService) {
+    this.webItemInfo = _webItemInfoService.get("technology");
   }
-
 }

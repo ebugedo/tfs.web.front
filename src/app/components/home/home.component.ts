@@ -1,24 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component , Injectable} from '@angular/core';
 import { WebItem } from '../../models/web-item';
+import { WebItemInfoService } from '../../services/web-item-info.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styles: []
 })
-export class HomeComponent implements OnInit {
-
-  constructor() {
-    console.log("constructor HomeComponent");
+export class HomeComponent {
+  webItemInfo: WebItem=null;
+  constructor(private _webItemInfoService: WebItemInfoService) {
+    this.webItemInfo = _webItemInfoService.get("home");
   }
-  webItem: WebItem=  { 
-    HeaderImageUrl:"assets/img/avion.jpg",
-    HeaderImageUrlTooltip:"Nosotros",
-    ItemUrl: "",
-    Name: "aboutUs",
-    ShortDescription: "Aplicaciones web, bases de datos, integración de sistemas, etc..",
-    Title:"Nosotros"
-  };
-  ngOnInit() {
-  }
-
 }

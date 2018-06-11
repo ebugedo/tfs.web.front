@@ -1,24 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { WebItem } from '../../models/web-item';
-
+import { WebItemInfoService } from '../../services/web-item-info.service';
 @Component({
   selector: 'app-solutions',
   templateUrl: './solutions.component.html'
 })
-export class SolutionsComponent implements OnInit {
+export class SolutionsComponent  {
 
-  constructor() {
-    console.log("constructor SolutionsComponent");
-  }
-  webItem: WebItem=  { 
-    HeaderImageUrl:"assets/img/avion.jpg",
-    HeaderImageUrlTooltip:"Soluciones",
-    ItemUrl: "",
-    Name: "solutions",
-    ShortDescription: "Aplicaciones web, bases de datos, integración de sistemas, etc..",
-    Title:"Soluciones"
-  };
-  ngOnInit() {
+  webItemInfo: WebItem=null;
+  constructor(private _webItemInfoService: WebItemInfoService) {
+    this.webItemInfo = _webItemInfoService.get("solutions");
   }
 
 }

@@ -9,7 +9,7 @@ export class ContactComponent  {
 
   webItemInfo: WebItem=null;
   constructor(private _webItemInfoService: WebItemInfoService) {
-    this.webItemInfo = _webItemInfoService.get("home");
+    this.webItemInfo = _webItemInfoService.get("contact");
   }
 
 }

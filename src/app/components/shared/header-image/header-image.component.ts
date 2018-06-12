@@ -6,8 +6,8 @@ import { HeaderImage } from '../../../models/header-image';
   templateUrl: './header-image.component.html'
 })
 export class HeaderImageComponent {
-  @Input() image: HeaderImage;
-  //  @Input() image: string;
+  // @Input() image: HeaderImage;
+   @Input() image: string;
   //  image2: HeaderImage = {
   //    Url:"assets/img/diagramas.jpg",
   //    Description:"hola",
@@ -17,6 +17,7 @@ export class HeaderImageComponent {
   constructor() {
     // debugger;
     console.log("constructor HeaderImageComponent:");
+    console.log(this.image);
     // console.log("constructor ServicesComponent:" + this.headerImage.Url);
     // console.log("constructor HeaderImageComponent" );
     // console.log("HeaderImageComponent.constructor:" + this.image);

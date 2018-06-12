@@ -15,7 +15,7 @@ import { Router, ActivatedRoute, NavigationStart } from '@angular/router';
       this._router.events.subscribe((event:any) =>
       {
         if (event instanceof NavigationStart){
-          if (event.url=="/home"){
+          if (event.url=="/" || event.url=="/home"){
             this.isHomeComponent=true;
           }
           else

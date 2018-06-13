@@ -6,13 +6,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class NoImagePipe implements PipeTransform {
 
   transform(image: string): string {
-    debugger;
-    if (image.length!=0){
+    let defaultImage:string='assets/img/accenture.png';
+    if (image !=null && image.length!=0){
       return image;
     }
     else
     {
-      return 'assets/img/accenture.png';
+      return defaultImage;
     }
   }
 

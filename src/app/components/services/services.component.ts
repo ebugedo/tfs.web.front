@@ -9,9 +9,9 @@ import { WebItemInfoService } from '../../services/web-item-info.service';
 })
 export class ServicesComponent {
   webItemInfo: WebItem = null;
-  headerImage: HeaderImage = new HeaderImage();
+  // headerImage: HeaderImage = new HeaderImage();
   constructor(private _webItemInfoService: WebItemInfoService) {
     this.webItemInfo = _webItemInfoService.get("services");
-    this.headerImage.Url = this.webItemInfo.HeaderImageUrl;
+    // this.headerImage.Url = this.webItemInfo.HeaderImageUrl;
   }
 }

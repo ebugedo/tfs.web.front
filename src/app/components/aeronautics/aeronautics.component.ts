@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { WebItemComponentBase } from '../../models/web-item-component-base';
 import { WebItemInfoService } from '../../services/web-item-info.service';
 @Component({
-  selector: 'app-clients',
-  templateUrl: './clients.component.html'
+  selector: 'app-aeronautics',
+  templateUrl: './aeronautics.component.html'
 })
-export class ClientsComponent extends WebItemComponentBase {
+export class AeronauticsComponent extends WebItemComponentBase {
   constructor(private _webItemInfoService: WebItemInfoService) {
-    super(_webItemInfoService, "clients");
+    super(_webItemInfoService, "aeronautics");
   }
 }

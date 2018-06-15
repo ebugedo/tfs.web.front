@@ -1,17 +1,12 @@
-import { Component, Injectable } from '@angular/core';
-import { WebItem } from '../../models/web-item';
+import { Component } from '@angular/core';
+import { WebItemComponentBase } from '../../models/web-item-component-base';
 import { WebItemInfoService } from '../../services/web-item-info.service';
-
 @Component({
   selector: 'app-tfs-air-transport',
   templateUrl: './tfs-air-transport.component.html'
 })
-export class TfsAirTransportComponent  {
-
-  webItemInfo: WebItem=null;
-  // public headerImage: HeaderImage;
+export class TfsAirTransportComponent extends WebItemComponentBase {
   constructor(private _webItemInfoService: WebItemInfoService) {
-    this.webItemInfo = _webItemInfoService.get("tfsAirTransport");
+    super(_webItemInfoService, "tfsAirTransport");
   }
-
 }

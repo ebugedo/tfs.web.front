@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { WebItem } from '../../models/web-item';
+import { Component } from '@angular/core';
+import { WebItemComponentBase } from '../../models/web-item-component-base';
 import { WebItemInfoService } from '../../services/web-item-info.service';
 @Component({
   selector: 'app-technology',
   templateUrl: './technology.component.html'
 })
-export class TechnologyComponent {
-
-  webItemInfo: WebItem=null;
+export class TechnologyComponent extends WebItemComponentBase {
   constructor(private _webItemInfoService: WebItemInfoService) {
-    this.webItemInfo = _webItemInfoService.get("technology");
+    super(_webItemInfoService, "technology");
   }
 }

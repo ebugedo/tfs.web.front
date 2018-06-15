@@ -58,9 +58,17 @@ export class WebItemInfoService {
     },
     {
       HeaderImageUrl: "assets/img/cargo4.jpg",
+      HeaderImageUrlTooltip: "Tecnologías",
+      ItemUrl: "",
+      Name: "technology",
+      ShortDescription: "TFS Air Transport es una aplicación en la nube para la gestión de compañías de transporte aéreo. Gestiona la operativa básica del día a día de una compañía de transporte aéreo. Si tiene conexión a internet, tiene acceso a TFS Air Transport. Podrá utilizarla desde un pc, un portátil, un tablet o un móvil.",
+      Title: "Tecnologías"
+    },
+    {
+      HeaderImageUrl: "assets/img/cargo4.jpg",
       HeaderImageUrlTooltip: "TFS Air Transport",
       ItemUrl: "",
-      Name: "TFS Air Transport",
+      Name: "tfsAirTransport",
       ShortDescription: "TFS Air Transport es una aplicación en la nube para la gestión de compañías de transporte aéreo. Gestiona la operativa básica del día a día de una compañía de transporte aéreo. Si tiene conexión a internet, tiene acceso a TFS Air Transport. Podrá utilizarla desde un pc, un portátil, un tablet o un móvil.",
       Title: "TFS Air Transport"
     }

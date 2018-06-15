@@ -16,8 +16,8 @@ export class HeaderImageComponent {
   //  }
   constructor() {
     // debugger;
-    console.log("constructor HeaderImageComponent:");
-    console.log(this.image);
+    // console.log("constructor HeaderImageComponent:");
+    // console.log(this.image);
     // console.log("constructor ServicesComponent:" + this.headerImage.Url);
     // console.log("constructor HeaderImageComponent" );
     // console.log("HeaderImageComponent.constructor:" + this.image);

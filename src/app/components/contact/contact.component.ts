@@ -1,15 +1,12 @@
-import { Component, Injectable} from '@angular/core';
-import { WebItem } from '../../models/web-item';
+import { Component } from '@angular/core';
+import { WebItemComponentBase } from '../../models/web-item-component-base';
 import { WebItemInfoService } from '../../services/web-item-info.service';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html'
 })
-export class ContactComponent  {
-
-  webItemInfo: WebItem=null;
+export class ContactComponent extends WebItemComponentBase {
   constructor(private _webItemInfoService: WebItemInfoService) {
-    this.webItemInfo = _webItemInfoService.get("contact");
+    super(_webItemInfoService, "contact");
   }
-
 }

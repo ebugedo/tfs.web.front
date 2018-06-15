@@ -11,7 +11,7 @@ import { Router, ActivatedRoute, NavigationStart } from '@angular/router';
     isHomeComponent:boolean=false;
 
     constructor(private _router: Router) { 
-      console.log("constructor HeaderComponent");
+      // console.log("constructor HeaderComponent");
       this._router.events.subscribe((event:any) =>
       {
         if (event instanceof NavigationStart){
